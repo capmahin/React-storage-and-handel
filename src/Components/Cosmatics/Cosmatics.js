@@ -1,4 +1,8 @@
 import React from 'react';
+
+import Cosmetic from '../Cosmetic/Cosmetic';
+// import Cosmatic from '../cosmatic/cosmatic';
+
 ;
 
 const Cosmatics = () => {
@@ -15,7 +19,7 @@ const Cosmatics = () => {
 
             </h1>
             {
-                cosmatics.map(cosmatic =>console.log(cosmatic))
+                cosmatics.map(cosmatic => <Cosmetic key={cosmatic.id} cosmatic={cosmatic} ></Cosmetic>)
             }
             
         </div>
