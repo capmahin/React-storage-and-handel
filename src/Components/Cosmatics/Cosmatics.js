@@ -1,17 +1,23 @@
 import React from 'react';
-import { add } from '../../utilities/Calculate';
-// import add from '../../utilities/Calculate';
+;
 
 const Cosmatics = () => {
-    const first = 55;
-    const second = 44;
-    const total = add(first , second);
+    const cosmatics = [
+        {id:1, name:'alta', price:100},
+        {id:2, name:'palis', price:200},
+        {id:3, name:'malis', price:300},
+        {id:4, name:'balis', price:400},
+        {id:5, name:'nalis', price:500},
+    ]
     return (
         <div>
             <h1>This is my cosmatic website
 
             </h1>
-            <p>total: {total}</p>
+            {
+                cosmatics.map(cosmatic =>console.log(cosmatic))
+            }
+            
         </div>
     );
 };
