@@ -2,7 +2,7 @@ const addToDb =id =>{
     const quantity = localStorage.getItem(id);
     if(quantity){
         console.log('already exist');
-        const newQuanity = quantity + 1;
+        const newQuanity = parseInt(quantity) + 1;
         localStorage.setItem(id , newQuanity);
     }
     else{
